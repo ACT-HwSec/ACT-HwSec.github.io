@@ -3,23 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>News · HwSec</title>
+<title>News | HwSec</title>
 <meta name="description" content="News from HwSec, the Embedded System and Hardware Security Group.">
+<meta name="theme-color" content="#F3F4F2">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body data-page="news">
 <div id="site-header"></div>
-<main>
-  <section class="page-hero"><div class="wrap">
-    <p class="eyebrow"><span class="en">News</span><span class="vi">Tin tức</span></p>
-    <h1><span class="en">What's new</span><span class="vi">Tin mới</span></h1>
-  </div></section>
-  <section class="block"><div class="wrap" style="max-width:860px">
-    <ul class="news" id="news-all"></ul>
-  </div></section>
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1><span class="en">News</span><span class="vi">Tin tức</span></h1>
+      <p><span class="en">Papers, defences, talks and new members.</span><span class="vi">Bài báo, bảo vệ luận án, báo cáo khoa học và thành viên mới.</span></p>
+    </div>
+    <div id="strip"></div>
+  </div>
+  <section class="sect">
+    <div class="wrap cols">
+      <div class="rail"></div>
+      <ul class="news" id="news-all"></ul>
+    </div>
+  </section>
 </main>
 <div id="site-footer"></div>
 <script src="assets/data.js"></script>

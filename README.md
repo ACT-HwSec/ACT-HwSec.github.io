@@ -14,8 +14,10 @@ news.html           News
 join.html           Open positions and contact
 assets/data.js      ← ALL CONTENT LIVES HERE. Edit this file to update the site.
 assets/site.js      Rendering and language switch (normally no need to edit)
-assets/style.css    Design
-assets/favicon.svg  Tab icon
+assets/style.css    Design (colours, type, layout)
+assets/fonts.css    Self-hosted fonts: Be Vietnam Pro and JetBrains Mono (SIL Open Font License, see assets/fonts/)
+assets/favicon.svg  Tab icon (the HwSec chip mark)
+assets/act-crest.png  ← add the Academy logo here (see below)
 assets/people/      Put member photos here (square JPG, ~400×400)
 ```
 
@@ -69,6 +71,7 @@ Open `assets/data.js` and search for `TODO`. Every one appears highlighted in ye
 
 | Where in `data.js` | What to put |
 |---|---|
+| `assets/act-crest.png` (file) | The Academy logo, PNG with a transparent background, about 200 px tall. Ask the Academy for the official file and confirm you may use it. The footer hides it until the file exists. |
 | `SITE.email` | Group or contact email |
 | `SITE.address` (EN + VI) | Room / building of the lab |
 | `SITE.mapUrl` | Google Maps link to the lab |
@@ -89,6 +92,12 @@ Open `assets/data.js` and search for `TODO`. Every one appears highlighted in ye
 - Thanh-Ngoc Nguyen's IEEE Xplore profile also lists two papers outside hardware security (traffic-sign detection, assessment design). They may belong to someone else with the same name, so they are **not** on the site.
 - Photos: put `firstname-lastname.jpg` in `assets/people/` and set `photo: "firstname-lastname.jpg"` for that person.
 - Update `SITE.updated` and the PI's `metrics` from Google Scholar when you refresh publications.
+
+## Design notes
+
+- Colours come from the Academy crest: seal red `#B3122E` and gold `#C99A2E` on porcelain `#F3F4F2`, with ink `#191C24`. Red is kept for the leak cursor, the active menu item and the recruiting band.
+- The power trace on the home page is an **illustration** generated in `assets/site.js` (`heroScope`). The caption says so. If you have a real measured trace, it can replace it.
+- The site follows each visitor's light/dark setting and turns off the trace animation for visitors who have reduced motion enabled.
 
 ## Adding a publication
 

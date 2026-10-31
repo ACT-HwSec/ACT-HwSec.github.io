@@ -13,6 +13,7 @@ const SITE = {
   address: {en: "TODO: room / building, Academy of Cryptography Techniques, Hanoi", vi: "TODO: phòng / tòa nhà, Học viện Kỹ thuật Mật mã, Hà Nội"},
   mapUrl:  "TODO: Google Maps link to the lab",
   github:  "https://github.com/ACT-HwSec",
+  crest:   "assets/act-crest.png",   // save the Academy logo here (PNG with transparent background); hidden if missing
   updated: "2026-10-31",
 };
 

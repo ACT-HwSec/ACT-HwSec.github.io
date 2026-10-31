@@ -3,26 +3,30 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Publications · HwSec</title>
+<title>Publications | HwSec</title>
 <meta name="description" content="Publications of HwSec on side-channel analysis, secure RISC-V, cryptographic hardware and lightweight cryptography.">
+<meta name="theme-color" content="#F3F4F2">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts.css">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body data-page="publications">
 <div id="site-header"></div>
-<main>
-  <section class="page-hero"><div class="wrap">
-    <p class="eyebrow"><span class="en">Publications</span><span class="vi">Công bố khoa học</span></p>
-    <h1><span class="en">Papers and theses</span><span class="vi">Bài báo và luận án</span></h1>
-    <p><span class="en">Group members are shown in bold. Each title links to its Google Scholar entry.</span><span class="vi">Tên thành viên của nhóm được in đậm. Mỗi tiêu đề dẫn tới trang Google Scholar của bài báo.</span></p>
-  </div></section>
-  <section class="block"><div class="wrap">
-    <div class="filters" id="pf" role="toolbar" aria-label="Filters"></div>
-    <p class="count" id="pc"></p>
-    <div id="pl"></div>
-  </div></section>
+<main id="main">
+  <div class="page-head">
+    <div class="wrap">
+      <h1><span class="en">Publications</span><span class="vi">Công bố khoa học</span></h1>
+      <p><span class="en">Group members are in bold. Each title opens the paper on Google Scholar.</span><span class="vi">Thành viên của nhóm được in đậm. Bấm vào tiêu đề để mở bài báo trên Google Scholar.</span></p>
+    </div>
+    <div id="strip"></div>
+  </div>
+  <section class="sect">
+    <div class="wrap">
+      <div class="filters" id="pf"></div>
+      <p class="count" id="pc" aria-live="polite"></p>
+      <div id="pl"></div>
+    </div>
+  </section>
 </main>
 <div id="site-footer"></div>
 <script src="assets/data.js"></script>
